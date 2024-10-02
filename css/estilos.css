@@ -45,13 +45,20 @@ a { text-decoration: none; }
 }
 
 .topo {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     position: sticky;
     top: 0;
     background-color: var(--cor-escura);
 
+}
+.limitador{
+    width: 95vw;
+    max-width: 1000px;
+    margin: auto;
+}
+.topo .limitador{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .titulo-menu a {
@@ -251,9 +258,29 @@ tr:nth-child(odd){
     color: var(--cor-escura);
     font-weight: bold;
 }
-.limitador{
-    width: 95vw;
-    max-width: 1000px;
-    margin: auto;
+.card{
+    border-radius: 50%;
+    transition: all .3s ;
+    box-shadow: 5px 5px 20px black ;
 
+    
+}
+.figuras{
+    display: flex;
+    
+}
+.card:hover{
+    transform: translatey(-20px) ;
+    transform: scale(1.1);
+}
+.figuras:hover .card{
+    opacity: .5;
+    ;
+ 
+    
+
+}
+.figuras .card:hover{
+    opacity: 1;
+    
 }
