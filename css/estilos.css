@@ -39,7 +39,6 @@ a { text-decoration: none; }
 }
 
 .titulo a {
-    background-color: var(--cor-escura);
     color: var(--cor-clara);
     padding: 0.3rem 1rem;
     border-radius: 4px;
@@ -47,17 +46,20 @@ a { text-decoration: none; }
 
 .topo {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     position: sticky;
     top: 0;
-    background-color: var(--cor-clara);
+    background-color: var(--cor-escura);
+
 }
 
 .titulo-menu a {
     color: var(--cor-escura);
+    background-color: var(--cor-clara);
     font-size: 1.2rem;
-    padding: 1rem;
+    padding: 0.5rem;
+    margin: 5% 0;
     /* background-color: yellow; */
     display: inline-block;
 }
@@ -209,4 +211,49 @@ article address {
     padding-left: 0;
     font-size: 1.8rem;
     border-bottom: solid 1px;
+}
+table{
+    border: solid 4px var(--cor-escura);
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+    border-collapse: collapse;
+}
+caption{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    padding-bottom: 0.3rem;
+
+    
+}
+th, td{
+    border: solid 3.4px var(--cor-escura);
+
+}
+th{
+    background-color: var(--cor-escura);
+    color: var(--cor-clara);
+    padding: 0.5rem;
+}
+tr{
+    text-align: center;
+}
+tbody{
+    background-color: var(--cor-texto);
+    color: var(--cor-clara);
+}
+td:nth-child(2){
+    text-align: start;
+    padding-left: 4%;
+}
+tr:nth-child(odd){
+    background-color: rgb(119, 115, 115);
+    color: var(--cor-escura);
+    font-weight: bold;
+}
+.limitador{
+    width: 95vw;
+    max-width: 1000px;
+    margin: auto;
+
 }
